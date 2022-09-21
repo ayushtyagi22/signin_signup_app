@@ -13,7 +13,7 @@ export default function Home() {
 
     useEffect(() => {
             if (!localStorage.getItem('token')) {
-                nav('/signin_signup_app/login')
+                nav('/login')
             }
     },[logout])
 

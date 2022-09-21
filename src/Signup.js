@@ -42,7 +42,7 @@ export default function Signup() {
             .then(res => {
               console.log(res.data.token)
               localStorage.setItem('token', res.data.token)
-              nav("/signin_signup_app/registered")
+              nav("/registered")
             })
             .catch(err => {
               console.log(err.response)

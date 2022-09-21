@@ -12,7 +12,7 @@ export default function Registered() {
 
             if (count === 1) {
                 clearInterval(interval);
-                nav('/signin_signup_app/login')
+                nav('/login')
             }
         },1000);
     })

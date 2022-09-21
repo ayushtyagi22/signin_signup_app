@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import Login from './Login'
 import Home from './Home'
 import Signup from './Signup'
@@ -9,15 +9,15 @@ import Registered from './Registered'
 function App() {
   return(
       <div>
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <HashRouter>
         <Routes>
-          <Route path="/signin_signup_app/" element={<Login />}/>
-          <Route path="/signin_signup_app/login" element={<Login />}/>
-          <Route path="/signin_signup_app/home" element={<Home />}/>
-          <Route path="/signin_signup_app/signup" element={<Signup />}/>
-          <Route path="/signin_signup_app/registered" element={<Registered />}/>
+          <Route path="/" element={<Login />}/>
+          <Route path="/login" element={<Login />}/>
+          <Route path="/home" element={<Home />}/>
+          <Route path="/signup" element={<Signup />}/>
+          <Route path="/registered" element={<Registered />}/>
         </Routes>
-        </BrowserRouter>
+        </HashRouter>
       </div>
   )
 }
