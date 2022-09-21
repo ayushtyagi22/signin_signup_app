@@ -11,11 +11,11 @@ function App() {
       <div>
         <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Routes>
-          <Route path="/" element={<Login />}/>
-          <Route path="/login" element={<Login />}/>
-          <Route path="/home" element={<Home />}/>
-          <Route path="/signup" element={<Signup />}/>
-          <Route path="/registered" element={<Registered />}/>
+          <Route path="/signin_signup_app/" element={<Login />}/>
+          <Route path="/signin_signup_app/login" element={<Login />}/>
+          <Route path="/signin_signup_app/home" element={<Home />}/>
+          <Route path="/signin_signup_app/signup" element={<Signup />}/>
+          <Route path="/signin_signup_app/registered" element={<Registered />}/>
         </Routes>
         </BrowserRouter>
       </div>

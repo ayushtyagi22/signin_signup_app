@@ -18,7 +18,7 @@ export default function Login() {
 
   const handleSignup = (e) => {
     e.preventDefault();
-    nav("/signup")
+    nav("/signin_signup_app/signup")
   }
 
   const handleApi = (e) => {
@@ -31,7 +31,7 @@ export default function Login() {
     .then(res => {
       console.log(res.data.token)
       localStorage.setItem('token', res.data.token)
-      nav("/home")
+      nav("/signin_signup_app/home")
     })
     .catch(err => {
       console.log(err.response)
